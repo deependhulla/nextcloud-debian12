@@ -52,6 +52,8 @@ sed -i "s/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT/error_reporting = 
 #sed -i "s/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT/error_reporting = E_ERROR/" /etc/php/8.2/fpm/php.ini
 sed -i "s/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT/error_reporting = E_ERROR/" /etc/php/8.2/apache2/php.ini
 
+sed -i "s/AllowOverride None/AllowOverride All/" /etc/apache2/apache2.conf 
+sed -i "s/output_buffering = 4096/output_buffering = Off/" /etc/php/8.2/apache2/php.ini
 sed -i "s/memory_limit = 128M/memory_limit = 512M/" /etc/php/8.2/apache2/php.ini
 sed -i "s/post_max_size = 100M/post_max_size = 800M/" /etc/php/8.2/apache2/php.ini
 sed -i "s/post_max_size = 8M/post_max_size = 800M/" /etc/php/8.2/apache2/php.ini
