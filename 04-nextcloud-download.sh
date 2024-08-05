@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cd /tmp/
-#wget -c https://download.nextcloud.com/server/releases/latest.tar.bz2
-#tar -xvjf latest.tar.bz2 
+wget -c https://download.nextcloud.com/server/releases/latest.tar.bz2
+tar -xvjf latest.tar.bz2 
 mkdir /home/nextcloud-data
 chown -R www-data:www-data /home/nextcloud-data
 
