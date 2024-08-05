@@ -11,9 +11,9 @@ echo "iptables-persistent iptables-persistent/autosave_v6 boolean true" | debcon
 DEBIAN_FRONTEND=noninteractive
 
 apt -y  install vim chrony openssh-server screen net-tools git mc postfix sendemail  \
-sudo wget curl ethtool iptraf-ng traceroute telnet rsyslog software-properties-common \
+sudo wget curl redis php-gmp php-redis ethtool iptraf-ng traceroute telnet rsyslog software-properties-common \
 iputils-ping  psmisc apt-transport-https elinks xfsprogs debconf-utils pwgen ca-certificates \
-gnupg2  unzip zip tree htop ffmpeg ghostscript libfile-fcntllock-perl apache2 php php-zip \
+gnupg2  certbot unzip zip tree htop ffmpeg ghostscript libfile-fcntllock-perl apache2 php php-zip \
 rsync php-zip php-mysql php-cli php-common php-imap php-ldap php-xml tar \
 php-curl php-mbstring php-zip php-apcu php-gd php-imagick imagemagick mcrypt \
 memcached php-memcached php-bcmath dbconfig-common libapache2-mod-php php-intl \
@@ -67,4 +67,6 @@ systemctl disable ModemManager 1>/dev/null 2>/dev/null
 systemctl stop wpa_supplicant 1>/dev/null 2>/dev/null
 systemctl disable wpa_supplicant 1>/dev/null 2>/dev/null
 
+## update default Config
+/bin/cp -pR files/rootdir/* /
 

@@ -1,0 +1,48 @@
+<?php
+$CONFIG = array (
+  'instanceid' => 'oc1fjgl480sdfsdfsdfsdfsdf2s',
+  'passwordsalt' => 'GN2L+Zjz4QATGW3V+iqqGHTsdfsdfsdfsdfsdfab66zLY',
+  'secret' => 'AMRn4b9NCMlaJtXzkbJuV49EO7sdfsdfsfsdfsdfsdfsdfsdfGQ/dx3P/r04p6XZ0BEtCOh',
+
+ 'maintenance_window_start' => 1,
+'memcache.local' => '\OC\Memcache\APCu',
+'memcache.locking' => '\OC\Memcache\Redis',
+'redis' => [
+     'host' => 'localhost',
+     'port' => 6379,
+],
+'filesystem_check_changes' => 1,
+  'default_phone_region' => 'IN',
+ 'mail_smtpmode' => 'smtp',
+  'mail_smtpauthtype' => 'PLAIN',
+  'mail_sendmailmode' => 'smtp',
+  'mail_smtpauth' => 1,
+  'mail_from_address' => 'nextcloudadmin',
+  'mail_domain' => 'you-rmail-domain-name',
+  'mail_smtpsecure' => 'tls',
+  'mail_smtphost' => 'you-domain-name-of-mail-server-here',
+  'mail_smtpport' => '587',
+  'mail_smtpname' => 'nextcloudadmin@your-domain-here',
+  'mail_smtppassword' => 'your-passowrd-here',
+  'maintenance' => false,
+
+
+
+
+  'trusted_domains' => 
+  array (
+    0 => 'nextcloud.your-domain-name-here',
+  ),
+  'datadirectory' => '/home/nextcloud-data',
+  'dbtype' => 'mysql',
+  'version' => '29.0.4.1',
+  'overwrite.cli.url' => 'https://nextcloud.your-domain-name-here',
+  'dbname' => 'nextclouddb',
+  'dbhost' => 'localhost',
+  'dbport' => '',
+  'dbtableprefix' => 'oc_',
+  'mysql.utf8mb4' => true,
+  'dbuser' => 'oc_nextcloudadmi',
+  'dbpassword' => 'you-db-password',
+  'installed' => true,
+);
